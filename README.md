@@ -1,27 +1,15 @@
-# Angularlearning
+1. Run `npm install -g @angular/cli` to install Angular's command-line interface globally.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+2. Run `ng new my-angular-app` to generate a new Angular project, replacing `my-angular-app` with your project name.
 
-## Development server
+3. Run `cd my-angular-app` to enter your newly created project folder.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+4. Run `ng serve` to start the development server and open `http://localhost:4200/` in your browser to view the app.
 
-## Code scaffolding
+5. Use `ng generate component my-component` to generate components or other Angular elements like services (`ng generate service my-service`).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6. Use `ng generate component my-component --inline-style` to generate components and use inline style with no .css file.
 
-## Build
+7. Use `ng generate component my-component --inline-template` to generate components and use inline style with no .html file.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+8. Use `ng generate component my-component --inline-style --inline-template` to generate components with no .html file and no .css file, it will give component file and test case file.
