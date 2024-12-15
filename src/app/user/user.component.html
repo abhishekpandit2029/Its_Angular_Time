@@ -1,0 +1,27 @@
+<p>user works!</p>
+
+<!-- template form -->
+<!-- <form #userformtemplate="ngForm" (ngSubmit)="getUserData(userformtemplate.value)">
+    <h2>user form template form</h2>
+    <input type="text" ngModel name="username" placeholder="enter user name"><br>
+    <input type="text" ngModel name="password" placeholder="enter password"><br>
+    <button>submit</button>
+</form> -->
+
+<h1 appRedHeading>Directives</h1>
+<!-- reactive form -->
+<form [formGroup]="loginform" (ngSubmit)="getUserData()">
+    <h2>user form template form</h2>
+    <input type="text" name="username" placeholder="enter user name" formControlName="username">
+    <span *ngIf="username && username.invalid && username.touched">this field is not valid</span><br>
+
+    <input type="text" name="password" placeholder="enter password" formControlName="password"><br>
+    <button [disabled]="loginform.invalid">submit</button>
+</form>
+
+<!-- routing -->
+<a routerLink="/profile">profile</a><br>
+<a routerLink="/user/90">user</a><br>
+<a routerLink="/dashboard">dashboard</a><br>
+<h2>Product Details ID: {{ productId }}</h2>
+<router-outlet></router-outlet>
